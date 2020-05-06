@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <title>Boon</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-main">
+      <div class="header-logo">
+        <p class="header-logo-name">Boon</p>
+        <img class="logo-img" src="assets/logo.svg" alt="logo">
+      </div>
+    </div>
+    <nav class="section-nav">
+      <ul class="nav-menu">
+        <li class="nav-item">Raise money for...</li>
+        <li class="nav-item">Take a tour</li>
+        <li class="nav-item">Pricing</li>
+        <li class="nav-item">Projects</li>
+        <li class="nav-item">Categories</li>
+      </ul>
+    </nav>
+    <div class="auth">
+      <img class="logo-img" src="assets/auth.svg" width="22" alt="auth">
+      <div class="popup-auth">
+        <div class="username-box">
+          <p class="username-caption">Username</p>
+          <p class="username-txt">some@example.com</p>
+        </div>
+        <ul class="username-list">
+          <li class="username-item">
+            <span class="username-item-caption">Favourite projects</span>
+            <span class="username-item-value">21</span>
+          </li>
+          <li class="username-item">
+            <span class="username-item-caption">Profile settings</span>
+          </li>
+        </ul>
+        <div class="username-logout">Logout</div>
+      </div>
+    </div>
+  </header>
+  <main class="mainly">
+    <section class="filter-holder">
+      <form class="form-search">
+        <input type="text" class="search-submit">
+        <span class="search-icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <button class="btn-filter">
+          <span>Filter</span>
+          <i class="fas fa-filter"></i>
+        </button>
+      </form>
+
+      <ul class="filter-menu">
+        <li class="filter-menu-item">
+          <span>Popular</span>
+        </li>
+        <li class="filter-menu-item">
+          <span>Recent</span>
+        </li>
+        <li class="filter-menu-item">
+          <span>Most funded</span>
+        </li>
+      </ul>
+      <div class="popup-filter-list">
+        <p class="header-filter-list">Categories</p>
+        <ul class="filter-categories">
+          <li class="filter-category">
+            <img class="img-category" src="assets/business.svg" alt="business">
+            <span>Business</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/community.svg" alt="community">
+            <span>Community</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/creative.svg" alt="creative">
+            <span>Creative</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/competition.svg" alt="competition">
+            <span>Competition</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/event.svg" alt="event">
+            <span>Event</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/faith.svg" alt="faith">
+            <span>Faith</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/newlywed.svg" alt="newlywed">
+            <span>Newlywed</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/sports.svg" alt="sports">
+            <span>Sports</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/wishes.svg" alt="wishes">
+            <span>Wishes</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/memorial.svg" alt="memorial">
+            <span>Memorial</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/family.svg" alt="family">
+            <span>Family</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/travel.svg" alt="travel">
+            <span>Travel</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/volunteer.svg" alt="volunteer">
+            <span>Volunteer</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/education.svg" alt="education">
+            <span>Education</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/nonprofit.svg" alt="nonprofit">
+            <span>Nonprofit</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/animals.svg" alt="animals">
+            <span>Animals</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/medical.svg" alt="medical">
+            <span>Medical</span>
+          </li>
+          <li class="filter-category">
+            <img class="img-category" src="assets/emergency.svg" alt="emergency">
+            <span>Emergency</span>
+          </li>
+        </ul>
+        <button class="btn-filter">
+          <span>Submit</span>
+        </button>
+      </div>
+    </section>
+    <section>
+      <ul class="card-list">
+        <li class="card-item">
+          <img class="card-img" width="200" alt="card">
+          <p class="card-header">PrinCube-The World's Smallest</p>
+          <p class="card-desc">The project team has begun turning their prototype
+            into the final product. Their ability to ship the products
+            may be affected by product for us</p>
+          <div class="owner-box">
+            <img class="owner-img" src="assets/owner.svg" alt="owner">
+            <div class="owner-desc">
+              <p class="owner-name">Rockers Technology</p>
+              <p class="owner-location">Chicago, IL</p>
+            </div>
+          </div>
+          <div class="progress-scale">
+            <div class="current-progress"></div>
+          </div>
+          <ul class="card-stat">
+            <li class="stat-item">
+              <p class="stat-header">funded</p>
+              <p class="stat-value">$2,348</p>
+            </li>
+            <li class="stat-item">
+              <p class="stat-header">Goal</p>
+              <p class="stat-value">$32,800</p>
+            </li>
+            <li class="stat-item">
+              <p class="stat-header">days left</p>
+              <p class="stat-value">6</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <ul class="card-list">
+        <li class="card-item">
+          <img class="card-img" width="200" alt="card">
+          <p class="card-header">PrinCube-The World's Smallest</p>
+          <p class="card-desc">The project team has begun turning their prototype
+            into the final product. Their ability to ship the products
+            may be affected by product for us</p>
+          <div class="owner-box">
+            <img class="owner-img" src="assets/owner.svg" alt="owner">
+            <div class="owner-desc">
+              <p class="owner-name">Rockers Technology</p>
+              <p class="owner-location">Chicago, IL</p>
+            </div>
+          </div>
+          <div class="progress-scale">
+            <div class="current-progress"></div>
+          </div>
+          <ul class="card-stat">
+            <li class="stat-item">
+              <p class="stat-header">funded</p>
+              <p class="stat-value">$2,348</p>
+            </li>
+            <li class="stat-item">
+              <p class="stat-header">Goal</p>
+              <p class="stat-value">$32,800</p>
+            </li>
+            <li class="stat-item">
+              <p class="stat-header">days left</p>
+              <p class="stat-value">6</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <ul class="card-list">
+        <li class="card-item">
+          <img class="card-img" width="200" alt="card">
+          <p class="card-header">PrinCube-The World's Smallest</p>
+          <p class="card-desc">The project team has begun turning their prototype
+            into the final product. Their ability to ship the products
+            may be affected by product for us</p>
+          <div class="owner-box">
+            <img class="owner-img" src="assets/owner.svg" alt="owner">
+            <div class="owner-desc">
+              <p class="owner-name">Rockers Technology</p>
+              <p class="owner-location">Chicago, IL</p>
+            </div>
+          </div>
+          <div class="progress-scale">
+            <div class="current-progress"></div>
+          </div>
+          <ul class="card-stat">
+            <li class="stat-item">
+              <p class="stat-header">funded</p>
+              <p class="stat-value">$2,348</p>
+            </li>
+            <li class="stat-item">
+              <p class="stat-header">Goal</p>
+              <p class="stat-value">$32,800</p>
+            </li>
+            <li class="stat-item">
+              <p class="stat-header">days left</p>
+              <p class="stat-value">6</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <ul class="card-list">
+        <li class="card-item">
+          <img class="card-img" width="200" alt="card">
+          <p class="card-header">PrinCube-The World's Smallest</p>
+          <p class="card-desc">The project team has begun turning their prototype
+            into the final product. Their ability to ship the products
+            may be affected by product for us</p>
+          <div class="owner-box">
+            <img class="owner-img" src="assets/owner.svg" alt="owner">
+            <div class="owner-desc">
+              <p class="owner-name">Rockers Technology</p>
+              <p class="owner-location">Chicago, IL</p>
+            </div>
+          </div>
+          <div class="progress-scale">
+            <div class="current-progress"></div>
+          </div>
+          <ul class="card-stat">
+            <li class="stat-item">
+              <p class="stat-header">funded</p>
+              <p class="stat-value">$2,348</p>
+            </li>
+            <li class="stat-item">
+              <p class="stat-header">Goal</p>
+              <p class="stat-value">$32,800</p>
+            </li>
+            <li class="stat-item">
+              <p class="stat-header">days left</p>
+              <p class="stat-value">6</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <ul class="card-list">
+        <li class="card-item">
+          <img class="card-img" width="200" alt="card">
+          <p class="card-header">PrinCube-The World's Smallest</p>
+          <p class="card-desc">The project team has begun turning their prototype
+            into the final product. Their ability to ship the products
+            may be affected by product for us</p>
+          <div class="owner-box">
+            <img class="owner-img" src="assets/owner.svg" alt="owner">
+            <div class="owner-desc">
+              <p class="owner-name">Rockers Technology</p>
+              <p class="owner-location">Chicago, IL</p>
+            </div>
+          </div>
+          <div class="progress-scale">
+            <div class="current-progress"></div>
+          </div>
+          <ul class="card-stat">
+            <li class="stat-item">
+              <p class="stat-header">funded</p>
+              <p class="stat-value">$2,348</p>
+            </li>
+            <li class="stat-item">
+              <p class="stat-header">Goal</p>
+              <p class="stat-value">$32,800</p>
+            </li>
+            <li class="stat-item">
+              <p class="stat-header">days left</p>
+              <p class="stat-value">6</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <ul class="card-list">
+        <li class="card-item">
+          <img class="card-img" width="200" alt="card">
+          <p class="card-header">PrinCube-The World's Smallest</p>
+          <p class="card-desc">The project team has begun turning their prototype
+            into the final product. Their ability to ship the products
+            may be affected by product for us</p>
+          <div class="owner-box">
+            <img class="owner-img" src="assets/owner.svg" alt="owner">
+            <div class="owner-desc">
+              <p class="owner-name">Rockers Technology</p>
+              <p class="owner-location">Chicago, IL</p>
+            </div>
+          </div>
+          <div class="progress-scale">
+            <div class="current-progress"></div>
+          </div>
+          <ul class="card-stat">
+            <li class="stat-item">
+              <p class="stat-header">funded</p>
+              <p class="stat-value">$2,348</p>
+            </li>
+            <li class="stat-item">
+              <p class="stat-header">Goal</p>
+              <p class="stat-value">$32,800</p>
+            </li>
+            <li class="stat-item">
+              <p class="stat-header">days left</p>
+              <p class="stat-value">6</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+@import "variables";
+
+%hover-change-color {
+  color: darken($header-text-color, 20%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 2%;
+  color: $header-text-color;
+  font-family: $font;
+  font-size: $font-size;
+  background-color: $header-background-color;
+
+  .header-logo {
+    width: 7%;
+    cursor: pointer;
+
+    .logo-img {
+      fill: $header-text-color;
+
+      &:hover {
+        fill: $logo-color-hover;
+      }
+    }
+  }
+
+  .header-news {
+    width: 20%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+      @extend %hover-change-color;
+    }
+
+    .title-news {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .content-news {
+      font-style: italic;
+      text-transform: capitalize;
+    }
+  }
+
+  .header-menu {
+    .header-link {
+      display: inline-block;
+      padding: 0 10px;
+      text-transform: uppercase;
+      border-right: 1px solid $header-text-color;
+      cursor: pointer;
+
+      &:hover {
+        @extend %hover-change-color;
+      }
+
+      &:last-child {
+        padding-right: 5px;
+        border-right: none;
+      }
+
+      .fa-user {
+        font-size: $large-font-size;
+      }
+    }
+  }
+}
+
+.section-nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: $nav-color;
+
+  .nav-menu {
+    display: flex;
+    width: 70%;
+
+    .nav-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      padding: 1% 2%;
+      border-right: 1px solid $content-color;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $item-color-hover;
+      }
+
+      .nav-logo {
+        width: 100px;
+        fill: $header-text-color;
+      }
+
+      .item-feature {
+        padding: 0 0 2px 5px;
+        color: $header-text-color;
+        font-family: $font;
+        font-style: italic;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .form-search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &:hover {
+      .search-submit {
+        border-bottom: 2px solid $header-text-color;
+      }
+    }
+
+    .search-submit {
+      width: 80%;
+      padding: 5px;
+      color: $header-text-color;
+      border: none;
+      background-color: transparent;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .search-icon {
+      margin: 5px;
+      color: $header-text-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.main {
+  height: 100%;
+}
+
+.content-item {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/quarq.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.desc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 1% 0 1%;
+  font-family: $font;
+  font-size: $font-size;
+  color: $font-color;
+  background-color: $desc-color;
+
+  .tier-items {
+    width: 20%;
+    text-align: center;
+    list-style-type: none;
+
+    .tier-item {
+      margin: 3px;
+      padding: 7px;
+      border: 2px solid $item-color-hover;
+      cursor: pointer;
+
+      &:first-child {
+        background-color: $item-color-hover;
+      }
+
+      &:hover {
+        background-color: darken($item-color-hover, 10%);
+      }
+    }
+  }
+
+  .main-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 15%;
+    margin-left: 2%;
+
+    .logo-header {
+      margin-bottom: 5px;
+
+      .logo-item {
+        width: 100px;
+        fill: $content-color;
+      }
+    }
+
+    .counter-item {
+      padding: 2px;
+      border: 1px solid $font-color;
+    }
+
+    .desc-list {
+      width: 100%;
+
+      .desc-item {
+        margin: 10px 0;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: lighten($font-color, 60%);
+        }
+      }
+    }
+  }
+
+  .details-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 65%;
+    list-style-type: none;
+
+    .details-item {
+      width: 200px;
+      margin: 0 2% 2% 2%;
+      cursor: pointer;
+
+      &:hover {
+        background-color: lighten($font-color, 60%);
+      }
+
+      .details-header {
+        height: 20px;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+
+      .details-stat {
+        margin: 10px 0;
+
+        .stat-item {
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          text-align: center;
+          line-height: 18px;
+          font-size: $small-font-size;
+          border: 1px solid $font-color;
+          border-radius: 100%;
+        }
+
+        .stat-check {
+          color: $header-text-color;
+          background-color: $stat-check-color;
+        }
+
+        .second-counter {
+          color: $header-text-color;
+          background-color: $content-color;
+        }
+      }
+
+      .details-desc {
+        font-size: $small-font-size;
+      }
+    }
+  }
+}
+
+.btn-item {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 20%;
+  height: 100px;
+  padding-left: 2%;
+  line-height: 100px;
+  background-color: $content-color;
+  opacity: .7;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(.98);
+    transition: all 1s;
+    opacity: .9;
+  }
+
+  .logo-btn {
+    max-width: 130px;
+    fill: white;
+  }
+}
