@@ -1,13 +1,25 @@
-$header-background-color: black;
-$header-text-color: white;
-$logo-color-hover: lightgray;
-$item-color-hover: gray;
-$desc-color: white;
-$nav-color: red;
-$content-color: brown;
-$stat-check-color: green;
-$font: Verdana, Tahoma, sans-serif;
-$font-size: 11px;
-$large-font-size: 14px;
-$small-font-size: 9px;
-$font-color: rgb(80, 78, 78);
+$main-font: 'SF Pro Display', Tahoma, sans-serif;
+$secondary-font: 'Inter', Tahoma, sans-serif;
+
+$main-color: #081531;
+$active-color: #4640DE;
+$inactive-color: #646464;
+$btn-color: white;
+$search-icon-color: #AAAAAA;
+$basic-card-color: #3E434F;
+$secondary-card-color: #969696;
+$basic-scale-color: #D2D2D2;
+$line-scale-color: #4640DE;
+
+$main-background-color: white;
+$secondary-background-color: #EAEAEA;
+$placeholder-background-color: #F1F1F1;
+$auth-background-color: #E1E6FF;
+$hover-background-color: #6C66FF;
+
+$basic-filter-font-size: 16px;
+$large-filter-font-size: 18px;
+$small-filter-font-size: 12px;
+
+$filter-border-radius: 4px;
+$card-border-radius: 3px;
